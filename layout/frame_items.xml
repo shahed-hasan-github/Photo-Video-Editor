@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<infiapp.com.videomaker.util.ScaleCardLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginLeft="4.0dip"
+    android:layout_marginTop="4.0dip"
+    android:layout_marginRight="4.0dip"
+    android:layout_marginBottom="2.0dip"
+    app:aspectRatioHeight="1"
+    app:aspectRatioWidth="1"
+    app:cardBackgroundColor="@color/m_black_less_than_40_opacity"
+    app:cardCornerRadius="@dimen/_10sdp"
+    app:cardElevation="4.0dip">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/framge_back">
+
+        <ImageView
+            android:id="@+id/ivThumb"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="15dp"
+            android:clickable="true"
+            android:scaleType="fitXY" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true">
+
+            <ImageView
+                android:id="@+id/cbSelect"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/fdone"
+                android:visibility="visible" />
+        </LinearLayout>
+
+
+        <View
+            android:id="@+id/clickableView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true" />
+
+        <TextView
+            android:id="@+id/tvThemeName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/ivThumb"
+            android:layout_gravity="bottom"
+            android:background="#40000000"
+            android:gravity="center"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColor="#fff"
+            android:textSize="16sp"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+</infiapp.com.videomaker.util.ScaleCardLayout>
