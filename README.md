@@ -42,4 +42,4 @@ Welcome to the Photo Video Editor Android Application.This is a comprehensive an
 
 </p>
 <h2>License</h2>
-<p>The Daily News Android Application is an open source software. Please review the license file for detailed terms and conditions.</p>
+<p>This Android Application is an open source software. Please review the license file for detailed terms and conditions.</p>
